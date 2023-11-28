@@ -1,0 +1,133 @@
+body {
+    background-image: url(../images/fanshawe.bg.jpg);
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+h1{
+
+    font-style: italic;
+    font-size:50px;
+    color: rgb(192, 54, 54);
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+
+article {
+   
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+}
+
+h2 {
+    
+    border-bottom: 4px solid  rgb(192, 54, 54) ;
+    padding-bottom: 10px;
+}
+
+ul li {
+    color: black;
+}
+#todo {
+    color: darkred;
+}
+#inprogress {
+    color: navy;
+}
+#done {
+    color: green;
+}
+.do li:nth-child(odd){
+    background-color: rgb(224, 139, 139);
+}
+
+.progress li:nth-child(odd){
+    background-color: rgb(224, 139, 139);
+}
+
+.fin li:nth-child(odd){
+    background-color: rgb(224, 139, 139);
+}
+
+.subject li:nth-child(odd){
+    background-color: rgb(224, 139, 139);
+}
+
+
+/* attribute selector */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+input[type="checkbox"]:checked + span::after {
+    margin-left: 15px;
+    content: "\1f44d";
+    width: 18px ;
+    height: 18px ;
+    border-radius: 25%;
+    background-color: green;
+    border: 3px solid #20b320;
+    font-size: 15px;
+    top: 15px;
+    right: 15px;
+    animation: fadeIn 0.7s;
+}
+
+input[type="checkbox"]:checked + span{
+    color:crimson
+    
+}
+    
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+section {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(240, 240, 240, 0.9); 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    border: 1px solid black;
+    background-color: rgb(136, 205, 219); 
+}
+
+
+
+.sticky-footer h3{
+    background-color: rgb(207, 207, 207);
+    margin-top: 80px;
+    text-align: center;
+    padding-top: 10px;
+}
